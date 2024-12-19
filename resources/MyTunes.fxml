@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="450" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dk.easv.MyTunes_light.GUI.Controller.MyTunesController">
+<VBox prefHeight="530.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dk.easv.MyTunes_light.GUI.Controller.MyTunesController">
    <children>
       <AnchorPane prefHeight="102.0" prefWidth="640.0">
          <children>
@@ -101,17 +101,28 @@
                         <TableColumn fx:id="songDurationCol" prefWidth="98.0" text="Duration" />
                      </columns>
                   </TableView>
+                  <HBox prefHeight="18.0" prefWidth="280.0">
+                     <children>
+                        <Button fx:id="SO_NEWBTN" mnemonicParsing="false" text="New ..." />
+                        <Button fx:id="SO_EDITBTN" mnemonicParsing="false" text="Edit...">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="SO_DELBTN" mnemonicParsing="false" text="Delete">
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="closeBtn" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#btnCloseWindow" prefHeight="25.0" prefWidth="50.0" text="Close">
+                           <HBox.margin>
+                              <Insets left="157.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
                </children>
             </VBox>
-         </children>
-      </HBox>
-      <HBox prefHeight="100.0" prefWidth="200.0">
-         <children>
-            <Button fx:id="closeBtn" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#btnCloseWindow" prefHeight="26.0" prefWidth="57.0" text="Close">
-               <HBox.margin>
-                  <Insets left="650.0" top="5.0" />
-               </HBox.margin>
-            </Button>
          </children>
       </HBox>
    </children>

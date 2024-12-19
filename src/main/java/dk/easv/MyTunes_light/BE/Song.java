@@ -43,6 +43,10 @@ public class Song {
         createMediaPlayer(new File("songs/" + path));
     }
 
+    public Song(int i, String title, String artist, String category, String filePath) {
+    }
+
+
     private void createMediaPlayer(File f) {
         if(f.exists() && !f.isDirectory())
             this.mediaPlayer = new MediaPlayer(new Media(new File("songs/" + path).toURI().toString()));

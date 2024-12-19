@@ -15,6 +15,7 @@ public class SongModel {
     private SongManager songManager;
 
     private ObservableList<Song> allSongs;
+    private Song newSong;
 
     public SongModel() throws Exception {
 
@@ -39,5 +40,9 @@ public class SongModel {
             }
         }
         return FXCollections.observableArrayList(searchSongs);
+    }
+
+    public void createNewSong(Song newSong) {
+        this.newSong = newSong;
     }
 }
